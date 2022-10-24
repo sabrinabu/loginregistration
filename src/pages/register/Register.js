@@ -73,7 +73,7 @@ function Register() {
       ) : null}
 
       <h1>CREATE AN ACCOUNT</h1>
-      <form onSubmit={handleSubmit}>
+      <form>
         <label>Username</label>
         <input
           type="text"
@@ -101,7 +101,7 @@ function Register() {
           onChange={handleChange}
         />
         <p>{formErrors.password}</p>
-        <button>Submit</button>
+        <button onClick={handleSubmit}>Submit</button>
       </form>
     </div>
   );
